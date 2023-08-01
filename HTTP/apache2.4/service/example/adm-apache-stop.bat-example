@@ -1,0 +1,13 @@
+:start
+cls
+@echo =======================
+@echo :: STOP APACHE ::
+@echo =======================
+@echo off
+
+cd ../bin
+
+httpd.exe -k stop
+
+pause
+

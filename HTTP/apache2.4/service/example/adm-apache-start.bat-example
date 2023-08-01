@@ -1,0 +1,13 @@
+:start
+cls
+@echo =======================
+@echo :: START APACHE ::
+@echo =======================
+@echo off
+
+cd ../bin
+
+httpd.exe -k start
+
+pause
+

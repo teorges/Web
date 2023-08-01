@@ -1,0 +1,14 @@
+:start
+cls
+@echo =======================
+@echo :: INSTALL APACHE ::
+@echo =======================
+@echo off
+
+cd ../bin
+
+httpd.exe -k install
+httpd.exe -k start
+
+pause
+

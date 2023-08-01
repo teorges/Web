@@ -1,0 +1,14 @@
+:start
+cls
+@echo =======================
+@echo :: INSTALL REDIS ::
+@echo =======================
+@echo off
+
+cd ../
+
+redis-server.exe --service-install
+redis-server.exe --service-start
+
+pause
+

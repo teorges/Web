@@ -1,0 +1,12 @@
+.idea
+apache2.4/logs/
+apache2.4/php_errors.log
+apache2.4/config/extra/httpd-ssl.conf
+apache2.4/config/extra/vhosts.conf
+nginx1.20/logs/
+nginx1.20/conf/ssl/
+nginx1.20/conf/nginx.conf
+apache2.4/service/*.bat
+nginx1.20/service/*.bat
+redis3.2/service/*.bat
+certificates/signed/

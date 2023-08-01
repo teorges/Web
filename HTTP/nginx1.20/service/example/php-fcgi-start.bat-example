@@ -1,0 +1,14 @@
+:start
+cls
+@echo =======================
+@echo :: START PHP FastCGI ::
+@echo =======================
+@echo off
+
+cd %cd%
+cd ../php8.1_nts
+
+
+echo Running...
+
+php-cgi.exe -b 127.0.0.1:9000

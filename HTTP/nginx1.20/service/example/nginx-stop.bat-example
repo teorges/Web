@@ -1,0 +1,16 @@
+:start
+cls
+@echo =======================
+@echo :: STOP NGINX ::
+@echo =======================
+@echo off
+
+cd %cd%
+cd ..
+
+taskkill /f /IM nginx.exe
+taskkill /f /IM php-cgi.exe
+
+@echo Stoped...
+
+pause

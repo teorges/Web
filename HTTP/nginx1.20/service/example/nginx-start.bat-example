@@ -1,0 +1,25 @@
+:start
+cls
+@echo =======================
+@echo :: START NGINX ::
+@echo =======================
+@echo off
+
+cd %cd%
+cd ..
+
+tasklist /FI "IMAGENAME eq nginx.exe" 2>NUL | find /I /N "nginx.exe">NUL
+
+IF NOT "%ERRORLEVEL%"=="0" (
+
+	@echo Started...
+	
+	start nginx.exe
+	
+) ELSE (
+
+	@echo Is running...
+
+)
+
+start service\php-fcgi-start.bat

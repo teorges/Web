@@ -1,0 +1,14 @@
+:start
+cls
+@echo =======================
+@echo :: UNINSTALL REDIS ::
+@echo =======================
+@echo off
+
+cd ../
+
+redis-server.exe --service-stop
+redis-server.exe --service-uninstall
+
+pause
+

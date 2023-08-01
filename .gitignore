@@ -1,0 +1,6 @@
+Repository/*
+!Repository/.gitignore
+Workspaces/*
+!Workspaces/tools/
+!Workspaces/index.php
+!Workspaces/.gitignore

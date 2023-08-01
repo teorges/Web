@@ -1,0 +1,24 @@
+:start
+cls
+@echo =======================
+@echo :: RESTART NGINX ::
+@echo =======================
+@echo off
+
+cd %cd%
+cd ..
+
+nginx.exe -t
+
+SET /P AREYOUSURE=Do you want to continue with the operation? (Y/N)?
+IF /I "%AREYOUSURE%" NEQ "Y" GOTO END
+
+taskkill /f /IM nginx.exe
+taskkill /f /IM php-cgi.exe.exe
+start nginx
+
+@echo Restarded...
+
+start service\php-fcgi-start.bat
+
+

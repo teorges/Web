@@ -1,0 +1,5 @@
+Windows:
+
+- Entre no diretorio e execute via shell:
+Para instalar -> redis-server --service-install
+Para remover -> redis-server --service-uninstall

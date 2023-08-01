@@ -1,0 +1,2 @@
+DIR >> C:\Program Files\OpenSSL-Win64\bin
+CMD >> openssl x509 -inform DER -in D:\HTTP\certificates\signed\certificate.cer -out D:\HTTP\certificates\signed\certificate.crt

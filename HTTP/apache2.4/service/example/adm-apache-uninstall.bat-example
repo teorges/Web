@@ -1,0 +1,14 @@
+:start
+cls
+@echo =======================
+@echo :: UNINSTALL APACHE ::
+@echo =======================
+@echo off
+
+cd ../bin
+
+httpd.exe -k stop
+httpd.exe -k uninstall
+
+pause
+
