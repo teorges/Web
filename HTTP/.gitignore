@@ -9,4 +9,6 @@ nginx1.20/conf/nginx.conf
 apache2.4/service/*.bat
 nginx1.20/service/*.bat
 redis3.2/service/*.bat
+php_nts/php.ini
+php_ts/php.ini
 certificates/signed/

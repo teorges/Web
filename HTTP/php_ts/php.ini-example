@@ -949,8 +949,8 @@ extension=pdo_mysql
 ;extension=pgsql
 ;extension=shmop
 
-extension=sqlsrv_82_nts_x64
-extension=pdo_sqlsrv_82_nts_x64
+extension=sqlsrv_82_ts_x64
+extension=pdo_sqlsrv_82_ts_x64
 
 ; The MIBS data available in the PHP distribution must be installed.
 ; See https://www.php.net/manual/en/snmp.installation.php
@@ -2012,5 +2012,5 @@ intl.error_level = E_WARNING
 ;xdebug.remote_port = 9000
 
 ; Certificates
-curl.cainfo="C:\HTTP\certificates\cacert.pem"
-openssl.cafile= "C:\HTTP\certificates\cacert.pem"
+curl.cainfo="\HTTP\certificates\cacert.pem"
+openssl.cafile= "\HTTP\certificates\cacert.pem"
