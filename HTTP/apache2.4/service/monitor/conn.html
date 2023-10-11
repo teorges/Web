@@ -1,0 +1,32 @@
+<html lang="pt-br">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <title>Ping Connection</title>
+</head>
+<body>
+
+<code>
+    <div id="status"></div>
+</code>
+
+<script>
+
+	let xhttp = new XMLHttpRequest()
+	
+    setInterval(() => {
+			
+		xhttp.open("GET", window.location.origin + "/conn.php", false)
+		xhttp.send()
+		xhttp.onload = () => {
+			
+			let html = xhttp.response			
+			document.getElementById("status").innerHTML = html.replaceAll("\n", "<br>")
+			
+		}
+		
+	}, 1000)
+	
+</script>
+
+</body>
+</html>
